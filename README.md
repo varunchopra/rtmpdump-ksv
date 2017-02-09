@@ -11,21 +11,21 @@ http://rtmpdump.mplayerhq.hu/
 
 An easy way to install rtmpdump with KSV's patches.
 
-### Install Dependencies
-apt-get -y install build-essential gcc make git libssl-dev 
+## Install Dependencies
+`apt-get -y install build-essential gcc make git libssl-dev`
 
-### Clone Repository
-git clone https://github.com/chopraaa/rtmpdump-ksv.git
+## Clone Repository
+`git clone https://github.com/chopraaa/rtmpdump-ksv.git`
 
-### Apply KSV's Patch
-cd rtmpdump-ksv
+## Apply KSV's Patch
+`cd rtmpdump-ksv`
 
-patch -p0 -i Patch.diff
+`patch -p0 -i Patch.diff`
 
-### Make
-make
+## Make
+`make`
 
-make install prefix=/usr
+`make install prefix=/usr`
 
-### Clean-up
-cd ../ && rm -rf rtmpdump-ksv
+## Clean-up
+`cd ../ && rm -rf rtmpdump-ksv`
