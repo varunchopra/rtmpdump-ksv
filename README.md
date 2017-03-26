@@ -1,4 +1,4 @@
-RTMP Dump v2.4
+```RTMP Dump v2.4
 (C) 2009 Andrej Stepanchuk
 (C) 2009-2011 Howard Chu
 (C) 2010 2a665470ced7adb7156fcef47f8199a6371c117b8a79e399a2771e0b36384090
@@ -6,26 +6,22 @@ RTMP Dump v2.4
 License: GPLv2
 librtmp license: LGPLv2.1
 http://rtmpdump.mplayerhq.hu/
+```
 
-# rtmpdump-ksv
+## rtmpdump-ksv
 
 An easy way to install rtmpdump with KSV's patches.
 
-## Install Dependencies
-`apt-get -y install build-essential gcc make git libssl-dev`
+```
+git clone https://github.com/chopraaa/rtmpdump-ksv.git
 
-## Clone Repository
-`git clone https://github.com/chopraaa/rtmpdump-ksv.git`
+cd rtmpdump-ksv
 
-## Apply KSV's Patch
-`cd rtmpdump-ksv`
+patch -p0 -i Patch.diff
 
-`patch -p0 -i Patch.diff`
+make
 
-## Make
-`make`
+make install prefix=/usr
 
-`make install prefix=/usr`
-
-## Clean-up
-`cd ../ && rm -rf rtmpdump-ksv`
+cd ../ && rm -rf rtmpdump-ksv
+```
